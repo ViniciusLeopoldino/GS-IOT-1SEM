@@ -71,9 +71,12 @@ A escolha dos componentes foi baseada na eficácia, custo e relevância para o p
 
 ### Dashboard em Diferentes Estados
 
-| Estado Normal    |  ![image](https://github.com/user-attachments/assets/84b08bcb-6cc1-43fc-a4f0-cc7b7868ec10) |
-| Estado de Alerta |  ![image](https://github.com/user-attachments/assets/217cdd2e-e21c-4426-ac2e-1d4b90343c8b) |
-| Estado de Perigo |  ![image](https://github.com/user-attachments/assets/75d6c41c-fe51-44e0-b775-4bedebbced66) |
+| Estado            | Imagem                                                                                               |
+|-------------------|------------------------------------------------------------------------------------------------------|
+| Estado Normal     | ![Estado Normal](https://github.com/user-attachments/assets/84b08bcb-6cc1-43fc-a4f0-cc7b7868ec10)    |
+| Estado de Alerta  | ![Estado de Alerta](https://github.com/user-attachments/assets/217cdd2e-e21c-4426-ac2e-1d4b90343c8b) |
+| Estado de Perigo  | ![Estado de Perigo](https://github.com/user-attachments/assets/75d6c41c-fe51-44e0-b775-4bedebbced66) |
+
 
 ### Arquitetura do Projeto
 
