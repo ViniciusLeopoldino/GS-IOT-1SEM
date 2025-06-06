@@ -105,7 +105,6 @@ Para executar este projeto, siga os passos abaixo.
 2.  **Importe o Fluxo:** Copie o código JSON do fluxo do Node-RED abaixo e cole no seu editor Node-RED (Menu → Import).
 
     ````json
-    // [
     {
         "id": "01b6b0c72321aca5",
         "type": "json",
@@ -462,7 +461,6 @@ Para executar este projeto, siga os passos abaixo.
         "disabled": false,
         "hidden": false
     }
-    ]
     ````
 
 3.  **Faça o Deploy:** Após importar o fluxo, clique no botão vermelho "Deploy" para ativar as configurações. Verifique se o nó `mqtt in` (com o servidor `broker.hivemq.com` e tópico `smae/station/01/data`) se conecta com sucesso (indicado por um ponto verde abaixo do nó).
