@@ -80,11 +80,10 @@ A escolha dos componentes foi baseada na eficácia, custo e relevância para o p
 
 ### Arquitetura do Projeto
 
-| Circuito no Wokwi | Fluxo no Node-RED |
-| :---: | :---: |
-| | |
-| ![image](https://github.com/user-attachments/assets/4c2a07fd-f7ad-4e9c-8ee5-57877b6ba263) | ![image](https://github.com/user-attachments/assets/8841ba9a-aefc-44a5-b3fb-0e67f6041c97) |
-
+| Arquitetura       | Imagem                                                                                    |
+|-------------------|-------------------------------------------------------------------------------------------|
+| Circuito no Wokwi | ![image](https://github.com/user-attachments/assets/4c2a07fd-f7ad-4e9c-8ee5-57877b6ba263) |
+| Fluxo no Node-RED | ![image](https://github.com/user-attachments/assets/8841ba9a-aefc-44a5-b3fb-0e67f6041c97) |
 
 ---
 
