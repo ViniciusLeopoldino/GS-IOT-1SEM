@@ -10,7 +10,7 @@
 5. [Justificativas Técnicas](#5-justificativas-técnicas)
 6. [Demonstração (Evidências)](#6-demonstração-evidências)
 7. [Como Executar o Projeto](#7-como-executar-o-projeto-guia-de-instalação)
-8. [Autor](#8-autor)
+8. [Autor](#8-grupo)
 
 ---
 
