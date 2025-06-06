@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "author": "Vinicius Leopoldino de Oliveira - RM 557047",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": -98.6, "left": -23.8, "attrs": {} },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic1",
+      "top": -36.9,
+      "left": -330.5,
+      "attrs": { "distance": "40" }
+    },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -18.9, "left": 253.8, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 121.2,
+      "left": -101.9,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": 121.2,
+      "left": -41.5,
+      "attrs": { "color": "yellow" }
+    },
+    { "type": "wokwi-led", "id": "led3", "top": 120, "left": 18.1, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 178.6,
+      "left": -101.4,
+      "attrs": { "value": "330" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 178.6,
+      "left": -41,
+      "attrs": { "value": "330" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": 176.75,
+      "left": 19.2,
+      "attrs": { "value": "330" }
+    },
+    { "type": "wokwi-buzzer", "id": "bz1", "top": -208.8, "left": -7.8, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:GND.2", "ultrasonic1:GND", "black", [ "v0" ] ],
+    [ "ultrasonic1:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "esp:GND.2", "dht1:GND", "black", [ "h0" ] ],
+    [ "dht1:VCC", "esp:3V3", "red", [ "h0" ] ],
+    [ "dht1:SDA", "esp:D15", "green", [ "v0", "h-28.8", "v-134.4", "h211.2" ] ],
+    [ "ultrasonic1:TRIG", "esp:D12", "green", [ "h-28.8", "v-9.6", "h105.6", "v-134.4" ] ],
+    [ "ultrasonic1:ECHO", "esp:D14", "green", [ "h-19.2", "v-28.8", "h96", "v-96" ] ],
+    [ "led1:A", "esp:D2", "green", [ "v0" ] ],
+    [ "led1:C", "r1:1", "green", [ "v0" ] ],
+    [ "r1:2", "esp:GND.1", "black", [ "h0" ] ],
+    [ "led2:A", "esp:D4", "gold", [ "v0" ] ],
+    [ "led2:C", "r2:1", "gold", [ "v0" ] ],
+    [ "r2:2", "esp:GND.1", "black", [ "h0" ] ],
+    [ "led3:A", "esp:D5", "red", [ "v0" ] ],
+    [ "led3:C", "r3:1", "red", [ "v0" ] ],
+    [ "r3:2", "esp:GND.1", "black", [ "h0" ] ],
+    [ "bz1:1", "esp:D13", "green", [ "v0" ] ],
+    [ "bz1:2", "esp:GND.1", "black", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
