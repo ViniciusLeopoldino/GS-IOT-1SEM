@@ -74,7 +74,10 @@ A escolha dos componentes foi baseada na eficácia, custo e relevância para o p
 | Estado Normal | Estado de Alerta | Estado de Perigo |
 | :---: | :---: | :---: |
 | | | |
-| ![Dashboard Normal](https://placeholder.com/dashboard-normal "Dashboard em Estado Normal") | ![Dashboard Alerta](https://placeholder.com/dashboard-alerta "Dashboard em Estado de Alerta") | ![Dashboard Perigo](https://placeholder.com/dashboard-perigo "Dashboard em Estado de Perigo") |
+| ![image](https://github.com/user-attachments/assets/84b08bcb-6cc1-43fc-a4f0-cc7b7868ec10)
+ | ![image](https://github.com/user-attachments/assets/217cdd2e-e21c-4426-ac2e-1d4b90343c8b)
+ | ![image](https://github.com/user-attachments/assets/75d6c41c-fe51-44e0-b775-4bedebbced66)
+ |
 
 ### Arquitetura do Projeto
 
@@ -82,7 +85,7 @@ A escolha dos componentes foi baseada na eficácia, custo e relevância para o p
 | :---: | :---: |
 | | |
 | ![Circuito Wokwi](https://placeholder.com/circuito "Circuito montado no Wokwi") | ![Fluxo Node-RED](https://placeholder.com/fluxo "Fluxo de dados no Node-RED") |
-![image](https://github.com/user-attachments/assets/53797bde-cc25-4eb4-bf72-a82f1cd24150)
+
 
 ---
 
