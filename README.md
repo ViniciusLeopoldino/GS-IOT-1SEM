@@ -67,7 +67,7 @@ A escolha dos componentes foi baseada na eficácia, custo e relevância para o p
 ## 6. Demonstração (Evidências)
 
 ### Vídeo de Funcionamento
-![GIF do Projeto](https://youtu.be/ZxqEnVOUHW4 "Demonstração do SMAE em funcionamento")
+[Link Youtube](https://youtu.be/ZxqEnVOUHW4 "Demonstração do SMAE em funcionamento")
 
 ### Dashboard em Diferentes Estados
 
