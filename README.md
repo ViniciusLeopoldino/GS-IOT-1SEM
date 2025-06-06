@@ -83,7 +83,7 @@ A escolha dos componentes foi baseada na eficácia, custo e relevância para o p
 | Circuito no Wokwi | Fluxo no Node-RED |
 | :---: | :---: |
 | | |
-| ![Circuito Wokwi](https://placeholder.com/circuito "Circuito montado no Wokwi") | ![Fluxo Node-RED](https://placeholder.com/fluxo "Fluxo de dados no Node-RED") |
+| ![image](https://github.com/user-attachments/assets/4c2a07fd-f7ad-4e9c-8ee5-57877b6ba263) | ![image](https://github.com/user-attachments/assets/8841ba9a-aefc-44a5-b3fb-0e67f6041c97) |
 
 
 ---
