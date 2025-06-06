@@ -1,0 +1,366 @@
+[
+    {
+        "id": "a69c905ea80ac573",
+        "type": "tab",
+        "label": "Fluxo 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4c3603956ce192fa",
+        "type": "json",
+        "z": "a69c905ea80ac573",
+        "name": "Converter para Objeto JSON",
+        "property": "payload",
+        "action": "obj",
+        "pretty": true,
+        "x": 400,
+        "y": 240,
+        "wires": [
+            [
+                "76a362a0b73b0208",
+                "c97fce033ad08ded",
+                "9d5d10415fddb0a6",
+                "6fce62560713169e",
+                "ba4bb7852b819e2f"
+            ]
+        ]
+    },
+    {
+        "id": "76a362a0b73b0208",
+        "type": "change",
+        "z": "a69c905ea80ac573",
+        "name": "Nível da Água",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.nivelAgua",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 160,
+        "wires": [
+            [
+                "43fe6dc04c001b7d",
+                "7801b91f16763da3"
+            ]
+        ]
+    },
+    {
+        "id": "c97fce033ad08ded",
+        "type": "change",
+        "z": "a69c905ea80ac573",
+        "name": "Temperatura",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.temperatura",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 240,
+        "wires": [
+            [
+                "9e9a90bd15170d77"
+            ]
+        ]
+    },
+    {
+        "id": "9d5d10415fddb0a6",
+        "type": "change",
+        "z": "a69c905ea80ac573",
+        "name": "Umidade",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.umidade",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 660,
+        "y": 320,
+        "wires": [
+            [
+                "bc17bf8e18581f11"
+            ]
+        ]
+    },
+    {
+        "id": "43fe6dc04c001b7d",
+        "type": "ui_gauge",
+        "z": "a69c905ea80ac573",
+        "name": "Nível da Água",
+        "group": "2f4e3f3b.d0b1c",
+        "order": 1,
+        "width": "4",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Nível da Água",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#5dd85d",
+            "#f9d343",
+            "#ff0000"
+        ],
+        "seg1": "60",
+        "seg2": "85",
+        "diff": false,
+        "className": "",
+        "x": 940,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "7801b91f16763da3",
+        "type": "ui_chart",
+        "z": "a69c905ea80ac573",
+        "name": "Histórico Nível da Água",
+        "group": "2f4e3f3b.d0b1c",
+        "order": 5,
+        "width": "12",
+        "height": "4",
+        "label": "Histórico Nível da Água (%)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "1",
+        "removeOlderPoints": "60",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 970,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9e9a90bd15170d77",
+        "type": "ui_gauge",
+        "z": "a69c905ea80ac573",
+        "name": "Temperatura",
+        "group": "2f4e3f3b.d0b1c",
+        "order": 2,
+        "width": "4",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Temperatura",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00bfff",
+            "#ffae5c",
+            "#ff6347"
+        ],
+        "seg1": "28",
+        "seg2": "35",
+        "diff": false,
+        "className": "",
+        "x": 930,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "bc17bf8e18581f11",
+        "type": "ui_gauge",
+        "z": "a69c905ea80ac573",
+        "name": "Umidade",
+        "group": "2f4e3f3b.d0b1c",
+        "order": 3,
+        "width": "4",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Umidade",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#4caf50",
+            "#ffc107",
+            "#2196f3"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 920,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "6fce62560713169e",
+        "type": "function",
+        "z": "a69c905ea80ac573",
+        "name": "Define Status de Alerta",
+        "func": "let nivel = msg.payload.nivelAgua;\nlet status = \"\";\nlet cor = \"\";\n\nif (nivel >= 85) {\n    status = \"PERIGO IMINENTE!\";\n    cor = \"red\";\n} else if (nivel >= 60) {\n    status = \"ALERTA - Nível Subindo\";\n    cor = \"orange\";\n} else {\n    status = \"NORMAL\";\n    cor = \"green\";\n}\n\n// Formata a mensagem para o nó de texto\nmsg.payload = `<font color='${cor}' size='5'><b>${status}</b></font>`;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 400,
+        "wires": [
+            [
+                "cdb3c9cdb7ed0774"
+            ]
+        ]
+    },
+    {
+        "id": "cdb3c9cdb7ed0774",
+        "type": "ui_text",
+        "z": "a69c905ea80ac573",
+        "group": "2f4e3f3b.d0b1c",
+        "order": 4,
+        "width": "12",
+        "height": "2",
+        "name": "Status do Alerta",
+        "label": "STATUS ATUAL",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 940,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "ba4bb7852b819e2f",
+        "type": "debug",
+        "z": "a69c905ea80ac573",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "fda0444bb15938e7",
+        "type": "mqtt in",
+        "z": "a69c905ea80ac573",
+        "name": "",
+        "topic": "smae/station/01/data",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "3f3855489843b886",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 200,
+        "wires": [
+            [
+                "4c3603956ce192fa"
+            ]
+        ]
+    },
+    {
+        "id": "2f4e3f3b.d0b1c",
+        "type": "ui_group",
+        "name": "Monitoramento em Tempo Real",
+        "tab": "b3e3e4e.e4c1c18",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "3f3855489843b886",
+        "type": "mqtt-broker",
+        "name": "HiveMQ Público",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "b3e3e4e.e4c1c18",
+        "type": "ui_tab",
+        "name": "SMAE",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
